@@ -4,6 +4,8 @@ local opt = vim.opt -- for conciseness
 opt.relativenumber = true -- show relative line numbers
 opt.number = true -- shows absolute line numbers on cursor line
 
+-- scrolloff autoscroll
+opt.scrolloff = 8
 
 -- tabs & indentation
 opt.tabstop = 2 -- 2 spaces for tabs (prettier default)
@@ -21,17 +23,17 @@ opt.smartcase = true -- if you include mixed case in search, assume you want cas
 -- appearance
 
 opt.termguicolors = true
-opt.background = 'dark' -- colorschemes will be made dark
-opt.signcolumn = 'yes' -- show sign column so that text doesn't shift
+opt.background = "dark" -- colorschemes will be made dark
+opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 
 -- backspace
-opt.backspace = 'indent,eol,start' -- allow backspace on indent, end of line or insert mode start position
+opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
 
 -- clipboard
-opt.clipboard:append('unnamedplus') -- use system clipboard as default register
+opt.clipboard:append("unnamedplus") -- use system clipboard as default register
 
 -- split windows
 opt.splitright = true -- split vertical window to the right
 opt.splitbelow = true -- split horizontal window to the bottom
 
-opt.iskeyword:append('-') -- consider string-string as whole word
+opt.iskeyword:append("-") -- consider string-string as whole word
