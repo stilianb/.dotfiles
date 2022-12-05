@@ -40,10 +40,17 @@ return packer.startup(function(use)
 	use("christoomey/vim-tmux-navigator") -- tmux & split window nav
 	use("szw/vim-maximizer") -- maximizes and restores current window
 	use("tpope/vim-surround") -- add, delete, change surroundings !!!
+	use("tpope/vim-commentary") -- comment with gcc
 	use("inkarkat/vim-ReplaceWithRegister") -- replace register contents using motion (gr + motion)
 
-	-- commenting with gc
-	use("numToStr/Comment.nvim")
+	-- toggleterm
+	use({
+		"akinsho/toggleterm.nvim",
+		tag = "*",
+		config = function()
+			require("toggleterm").setup()
+		end,
+	})
 
 	-- file explorer
 	use("nvim-tree/nvim-tree.lua")

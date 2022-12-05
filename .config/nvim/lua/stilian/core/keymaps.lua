@@ -57,5 +57,9 @@ keymap.set("n", "<leader>gfc", "<cmd>Telescope git_bcommits<cr>") -- list all gi
 keymap.set("n", "<leader>gb", "<cmd>Telescope git_branches<cr>") -- list git branches
 keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current changes per file with diff preview
 
+-- toggleterm commands --
+keymap.set("n", "<C-t>n", "<cmd>ToggleTerm direction=float<cr>") -- create floating termainl
+keymap.set("t", "<leader>tt", "<cmd>ToggleTermToggleAll<cr>") -- toggle all terminals
+
 -- restart lsp server
 keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mappint to restart lsp if necessary
