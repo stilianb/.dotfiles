@@ -23,7 +23,7 @@ opt.smartcase = true -- if you include mixed case in search, assume you want cas
 -- appearance
 
 opt.termguicolors = true
-opt.background = "dark" -- colorschemes will be made dark
+-- opt.background = "dark"
 opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 
 -- backspace

@@ -43,6 +43,9 @@ return packer.startup(function(use)
 	use("tpope/vim-commentary") -- comment with gcc
 	use("inkarkat/vim-ReplaceWithRegister") -- replace register contents using motion (gr + motion)
 
+	-- transparent background
+	use("xiyaowong/nvim-transparent")
+
 	-- toggleterm
 	use({
 		"akinsho/toggleterm.nvim",
