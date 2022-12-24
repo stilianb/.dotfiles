@@ -1,46 +1,34 @@
-local opt = vim.opt -- for conciseness
+vim.opt.relativenumber = true
+vim.opt.number = true
+vim.opt.scrolloff = 8
 
-opt.relativenumber = true -- relative line numbers
-opt.number = true -- absolute line number next to relative
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.expandtab = true
+vim.opt.smartindent = true
+vim.opt.wrap = false
 
-opt.scrolloff = 8 -- autoscroll when 8 lines away from bottom of screen
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
 
--- tabs & indentation
-opt.tabstop = 2
-opt.softtabstop = 2
-opt.shiftwidth = 2
-opt.expandtab = true
-opt.smartindent = true
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undofile = true 
 
-opt.wrap = false -- line wrapping
+vim.opt.termguicolors = true
+vim.opt.signcolumn = "yes" 
+vim.opt.isfname:append("@-@")
 
--- search settings
-opt.ignorecase = true
-opt.smartcase = true -- including mixed case in search -> assume case sensitive
-opt.hlsearch = false
-opt.incsearch = true
+vim.opt.backspace = "indent,eol,start" 
 
-opt.swapfile = false
-opt.backup = false
+vim.opt.clipboard:append("unnamedplus")
+vim.opt.iskeyword:append("-")
+vim.opt.splitright = true
+vim.opt.splitbelow = true
 
-opt.termguicolors = true
-opt.signcolumn = "yes" -- show sign column so text doesn't shift
-opt.isfname:append("@-@")
-
--- allow backspace on indent, end of line, or insert mode start position
-opt.backspace = "indent,eol,start" 
-
-opt.clipboard:append("unnamedplus") -- use system clipboard as default register
-
-opt.iskeyword:append("-") -- consider string-string as whole word
-
--- split windows
-opt.splitright = true -- split vertical window to the right
-opt.splitbelow = true -- split horizontal window to the bottom
-
-opt.cmdheight = 1 -- give more space for displaying messages
-
-opt.updatetime = 50
-
-opt.colorcolumn = "100"
+vim.opt.cmdheight = 1
 

@@ -79,7 +79,13 @@ _G.packer_plugins = {
     path = "/Users/stilian/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ale = {
+    loaded = true,
+    path = "/Users/stilian/.local/share/nvim/site/pack/packer/start/ale",
+    url = "https://github.com/dense-analysis/ale"
+  },
   catppucin = {
+    config = { "\27LJ\2\nD\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0%colorscheme catppuccin-macchiato\bcmd\bvim\0" },
     loaded = true,
     path = "/Users/stilian/.local/share/nvim/site/pack/packer/start/catppucin",
     url = "https://github.com/catppuccin/nvim"
@@ -114,11 +120,6 @@ _G.packer_plugins = {
     path = "/Users/stilian/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
-  harpoon = {
-    loaded = true,
-    path = "/Users/stilian/.local/share/nvim/site/pack/packer/start/harpoon",
-    url = "https://github.com/theprimeagen/harpoon"
-  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/Users/stilian/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -133,6 +134,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/stilian/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["null-ls.nvim"] = {
+    loaded = true,
+    path = "/Users/stilian/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
+    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -169,6 +175,11 @@ _G.packer_plugins = {
     path = "/Users/stilian/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["prettier.nvim"] = {
+    loaded = true,
+    path = "/Users/stilian/.local/share/nvim/site/pack/packer/start/prettier.nvim",
+    url = "https://github.com/MunifTanjim/prettier.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/stilian/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -194,16 +205,6 @@ _G.packer_plugins = {
     path = "/Users/stilian/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
-  ["vim-maximizer"] = {
-    loaded = true,
-    path = "/Users/stilian/.local/share/nvim/site/pack/packer/start/vim-maximizer",
-    url = "https://github.com/szw/vim-maximizer"
-  },
-  ["vim-prettier"] = {
-    loaded = true,
-    path = "/Users/stilian/.local/share/nvim/site/pack/packer/start/vim-prettier",
-    url = "https://github.com/prettier/vim-prettier"
-  },
   ["vim-surround"] = {
     loaded = true,
     path = "/Users/stilian/.local/share/nvim/site/pack/packer/start/vim-surround",
@@ -214,14 +215,18 @@ _G.packer_plugins = {
     path = "/Users/stilian/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
     url = "https://github.com/christoomey/vim-tmux-navigator"
   },
-  ["vim-with-me"] = {
+  ["zen-mode.nvim"] = {
     loaded = true,
-    path = "/Users/stilian/.local/share/nvim/site/pack/packer/start/vim-with-me",
-    url = "https://github.com/ThePrimeagen/vim-with-me"
+    path = "/Users/stilian/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",
+    url = "https://github.com/folke/zen-mode.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: catppucin
+time([[Config for catppucin]], true)
+try_loadstring("\27LJ\2\nD\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0%colorscheme catppuccin-macchiato\bcmd\bvim\0", "config", "catppucin")
+time([[Config for catppucin]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
