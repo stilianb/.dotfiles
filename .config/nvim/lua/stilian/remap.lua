@@ -27,6 +27,7 @@ vim.keymap.set('n', 'n', 'nzzzv')
 vim.keymap.set('n', 'N', 'Nzzzv')
 
 vim.keymap.set('x', "<leader>p", "\"_dP")
+vim.keymap.set('n', "<leader>T", ":TransparentToggle<CR>")
 
 vim.keymap.set("n", "<leader>y", "\"+y") -- <leader>y yank paragraph
 vim.keymap.set("v", "<leader>y", "\"+y")
