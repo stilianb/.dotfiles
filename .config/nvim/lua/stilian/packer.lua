@@ -76,8 +76,12 @@ return require("packer").startup(function(use)
     },
   })
 
-  -- firenvim --
-  use("glacambre/firenvim")
+  -- Toggleterm --
+  use { "akinsho/toggleterm.nvim", tag = '*', config = function()
+    require("toggleterm").setup()
+  end }
+  -- lazydocker --
+  use("jesseduffield/lazydocker")
 
   --  Prettier --
   use("MunifTanjim/prettier.nvim")

@@ -115,11 +115,6 @@ _G.packer_plugins = {
     path = "/Users/stilian/.local/share/nvim/site/pack/packer/start/emmet-vim",
     url = "https://github.com/mattn/emmet-vim"
   },
-  firenvim = {
-    loaded = true,
-    path = "/Users/stilian/.local/share/nvim/site/pack/packer/start/firenvim",
-    url = "https://github.com/glacambre/firenvim"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/stilian/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -134,6 +129,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/stilian/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
+  },
+  lazydocker = {
+    loaded = true,
+    path = "/Users/stilian/.local/share/nvim/site/pack/packer/start/lazydocker",
+    url = "https://github.com/jesseduffield/lazydocker"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
@@ -205,6 +205,12 @@ _G.packer_plugins = {
     path = "/Users/stilian/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["toggleterm.nvim"] = {
+    config = { "\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0" },
+    loaded = true,
+    path = "/Users/stilian/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
+  },
   undotree = {
     loaded = true,
     path = "/Users/stilian/.local/share/nvim/site/pack/packer/start/undotree",
@@ -247,6 +253,10 @@ time([[Defining packer_plugins]], false)
 time([[Config for catppucin]], true)
 try_loadstring("\27LJ\2\nD\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0%colorscheme catppuccin-macchiato\bcmd\bvim\0", "config", "catppucin")
 time([[Config for catppucin]], false)
+-- Config for: toggleterm.nvim
+time([[Config for toggleterm.nvim]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
+time([[Config for toggleterm.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
